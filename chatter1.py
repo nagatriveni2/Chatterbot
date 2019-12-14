@@ -4,7 +4,8 @@ import speech_recognition
 import subprocess
 import platform
 
-'''
+'''   
+#output in the form of voice
 class VoiceChatBot(ChatBot):
 
     def speak(self, text):
@@ -30,6 +31,7 @@ class VoiceChatBot(ChatBot):
 bot = VoiceChatBot('Example ChatBot')
 
 '''
+
 from chatterbot import ChatBot
 
 
@@ -41,7 +43,7 @@ bot = ChatBot(
     ]
 )
 
-
+#output in the form of text 
 
 trainer = ChatterBotCorpusTrainer(bot)
 
